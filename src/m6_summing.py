@@ -4,8 +4,8 @@ in its simplest classic forms:
    SUMMING:       total = total + number
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Patrick Vedova.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -28,6 +28,21 @@ def run_test_sum_cosines():
     print('--------------------------------------------------')
     print('Testing the   sum_cosines   function:')
     print('--------------------------------------------------')
+    # Test 1:
+    expected = 1.5403023059
+    answer = sum_cosines(1)
+    print('Test 1 expected', expected)
+    print('      actual', answer)
+    # Test 2:
+    expected = 1.124155470
+    answer = sum_cosines(2)
+    print('Test 2 expected', expected)
+    print('      actual', answer)
+    # Test 3:
+    expected = .1341629734
+    answer = sum_cosines(3)
+    print('Test 3 expected', expected)
+    print('      actual', answer)
 
 
 def sum_cosines(n):
